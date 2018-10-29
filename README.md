@@ -7,7 +7,7 @@
 - wget 
 - curl 
 - ssh
-- terraform: v0.11.5
+- terraform: v0.11.10
 - kubectl: latest stable
-- helm: v2.8.2
-- gcloud: v195.0.0 
+- helm: v2.11.0
+- gcloud: v222.0.0 
