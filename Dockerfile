@@ -11,9 +11,9 @@ ENV PATH=$PATH:/tools/bin
 ENV TERRAFORM_VERSION=0.11.13
 ENV HELM_VERSION=v2.13.0
 ENV GCLOUD_VERSION=239.0.0
+ENV ANSIBLE_VERSION=2.7.9
 
 # Install tools
-
 RUN apt -qq update && \
     apt -qq install -y \
     vim \
@@ -52,3 +52,6 @@ ENV CLOUDSDK_CORE_DISABLE_PROMPTS=1
 RUN wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${GCLOUD_VERSION}-linux-x86_64.tar.gz && \
     tar xavf google-cloud-sdk-*.tar.gz --directory $PWD && \
     gcloud --quiet --verbosity=error components update
+
+
+RUN pip install ansible==${ANSIBLE_VERSION}

@@ -11,3 +11,4 @@
 - kubectl: latest stable
 - helm: v2.13.0
 - gcloud: v239.0.0 
+- Ansible 2.7.9
