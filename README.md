@@ -1,5 +1,7 @@
 # DevOps Tools
 
+> /!\ Deprecated in favor of https://github.com/hamdifourati/toolbox
+
 > Docker image with devops tools.
 
 ## Installed Tools
